@@ -12,7 +12,7 @@ html{
 
 /*<-------Defaults------->*/
 body{
-    background-color: #fffdf5;
+    background-color: #ad2175;
     color: black;
     font-family: "providence";
     width: 99%;
@@ -28,10 +28,11 @@ h1, h2, h3, h4, h5, h6{
     font-family: "providence";
     font-weight:900;
     text-align: center;
+    color: #ad2175;
 }
 a{
     text-decoration: none;
-    color: gray;
+    color: #ad2175;
 }
 a:hover{
     color: #f164a2;
@@ -49,6 +50,15 @@ button {
 
 button:hover {
     background-color: black;
+    color: #fffdf5;
+}
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 1%;
+}
+th {
+    background-color: #f164a2;
     color: #fffdf5;
 }
 /*<-------CLASSES------->*/
@@ -69,11 +79,11 @@ button:hover {
 .nav a{
     margin-right: 20px;
     text-decoration: none;
-    color: gray;
+    color: black;
     font-weight: 600;
 }
 .nav a:hover{
-    color: black;
+    color: #f164a2;
 }
 .MEGAbox{
     display: flex;
@@ -111,6 +121,7 @@ button:hover {
 }
 .fat{
     font-weight: 600;
+    color: #ad2175;
 }
 
 .workscited{
@@ -123,9 +134,16 @@ button:hover {
     padding-left: 20%; 
     padding-bottom: 10%;
 }
+.cute-page{
+    background-image: url("Imgs/lines_bg.png");
+    background-repeat: repeat;
+    background-size: 40%;
+}
+/*<-----------IDS------------->*/
 #pfp{
     border-radius: 70%;
 }
+
 
 /*<-------WHEN THE SCREEN IS SMALL------->*/
 @media (max-width:768px){

@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="lionet.ico" rel="Shortcut icon" type="image/x-icon">
+    <script src="color.js" defer></script>
     </head>
     <!--Body-->
     <body id="page">
@@ -50,6 +51,11 @@
                     
                     <p> I will create two sections on this website. The first section would be for uploading pictures from my dialy life. i wll try to update as much as I can. I will addd some thoughs to earch picture. </p>
                     <img src="IMG_4426.jpg" class="doodle">
+                    <p>BTWWWW these are my old blogs</p>
+                    <ul>
+                        <li><a href="https://strawberrie-blog.neocities.org">strawberrie-blog</a></li>
+                        <li><a href="https://gothickitten415.neocities.org">gothickitten415</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="box-right">
@@ -75,34 +81,5 @@
             </div>
         </div>
 
-        <script>
-            function changeColors() {
-                const page = document.getElementById("page");
-                const boxes = document.querySelectorAll(".boxConcepts");
-                const title = document.querySelector(".title h1");
-
-                if (page.style.backgroundColor === "black") {
-                    page.style.backgroundColor = "#fffdf5";
-                    page.style.color = "black";
-                    boxes.forEach(b => {
-                        b.style.backgroundColor = "#fffdf5";
-                        b.style.borderColor = "black";
-                        b.style.boxShadow = "-5px 5px 0 black";
-                    });
-                    title.style.backgroundColor = "#fffdf5";
-                    title.style.color = "black";
-                } else {
-                    page.style.backgroundColor = "black";
-                    page.style.color = "#fffdf5";
-                    boxes.forEach(b => {
-                        b.style.backgroundColor = "black";
-                        b.style.borderColor = "#fffdf5";
-                        b.style.boxShadow = "-5px 5px 0 #fffdf5";
-                    });
-                    title.style.backgroundColor = "black";
-                    title.style.color = "#fffdf5";
-                }
-            }
-        </script>
     </body>
 </html>
