@@ -1,0 +1,150 @@
+html{
+    width: 100%;
+    margin: 0;
+}
+/*<-------FONTS------->*/
+
+@font-face {
+    font-family: "providence";
+    src: url("Providence Sans Regular.ttf") format("TrueType"),
+    url("Providence Sans Regular.woff");
+}
+
+/*<-------Defaults------->*/
+body{
+    background-color: #fffdf5;
+    color: black;
+    font-family: "providence";
+    width: 99%;
+    margin: 0;
+    text-align: justify;
+    width:fit-content;
+    background-image: url("IMG_3684.png");
+    background-repeat: repeat;
+    background-size: 60%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "providence";
+    font-weight:900;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    color: #ec94be;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fffdf5;
+    cursor: pointer;
+    color: black;
+    font-family: "providence";
+}
+
+button:hover {
+    background-color: black;
+    color: #fffdf5;
+}
+/*<-------CLASSES------->*/
+.header{
+    height: 10%;
+    border-bottom: solid 2px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    background-color: #fffdf5;
+    padding: 5px 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+}
+.nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+}
+.nav a:hover{
+    color: black;
+}
+.MEGAbox{
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+.title{
+    margin: 0;
+    border: 0;
+    padding: 5%;
+    width:fit-content;
+    margin-top: 80px;
+}
+.title h1{
+    background-color: #fffdf5;
+    padding: 5%;
+}
+.box-left{
+    flex: 1;
+    padding: 1%;
+}
+.box-middle{
+    flex:2;
+    padding: 1%;
+}
+.box-right{
+    flex: 2;
+    padding: 1%;
+}
+.boxConcepts{
+    border: solid 2px black;
+    padding: 5%;
+    box-shadow: -5px 5px 0 black;
+    background-color: #fffdf5;
+}
+.fat{
+    font-weight: 600;
+}
+
+.workscited{
+    padding-left: 40px;
+    text-indent: -40px;
+}
+.doodle{
+    display: inline;
+    width: 70%;
+    padding-left: 20%; 
+    padding-bottom: 10%;
+}
+#pfp{
+    border-radius: 70%;
+}
+
+/*<-------WHEN THE SCREEN IS SMALL------->*/
+@media (max-width:768px){
+    .MEGAbox{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .box-left,
+    .box-middle,
+    .box-right{
+        width: 100%;
+    }
+    .doodle{
+        width: 30%;
+        padding-bottom: 5px;
+        padding-left: 30%;
+    }
+    .fat{
+        font-size: 30px;
+    }
+}

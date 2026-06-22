@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <title>h3y Orb1t! - Home Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="lionet.ico" rel="Shortcut icon" type="image/x-icon">
+    </head>
+    <!--Body-->
+    <body id="page">
+        <div class="header">
+            <nav class="nav">
+                <a href="blog-menu.html">Personal Blog - Photos</a>
+                <a href="learning.html">Compilation of Info</a>
+            </nav>
+        </div>
+        <center>
+            <div class="title">
+            <img src="Imgs/IMG_3666.png" style="float: right; width: 10%;">
+                <h1>h3y Orb1t!</h1>
+                <button id="colorBtn" onclick="changeColors()">Change Colors</button>
+            </div>
+        <hr>
+        <hr>
+        </center>
+        
+        <div class="MEGAbox">
+            <div class="box-left">
+                <div class="boxConcepts">
+                    <p class="fat">Who am I?</p>
+                    <img src="Imgs/IMG_yenia.jpg" class="doodle" id="pfp">
+                    <br>
+                    <br>
+                    <p>Haiiiii!!!!! halloo(„• ֊ •„)੭"૮₍ •⤙•˶₊˚ෆ !!!! My name is Yenia. This is actually my thrid blog? me thinks. The first blog I made it when i was 14, my second blog when I was 17. And now i am 21 (it's 2026).</p>
+                    <p style="text-align: center;">✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦</p>
+                    <p>Anyways, let's me talk about who am i. I am an artist, i love painting with oils and gouache. I am also currently studying Computer SCience and planning a double major with Astrophysics. I am working as technical support</p>
+                    <p>I have been on technology since I was a kid. When I was like 8 with my iPad, I remember doing a jailbreak on it because I wanted to have custom features. I always liked inventing stuff on my mum’s computer. Later on, I got an interest in programming when I was in middle school studying algorithms flow charts, Visual Basic, and Excel macros. Later, I discovered SpaceHey, which led me to discover Neocities, and I started getting an interest in website development. This whole page is made by me with HTML and CSS mostly.</p>
+                    <p style="text-align: center;">✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦</p>
+                    <p>I also love stars so much. Apart from computer science. I wanted to study physics, specifically astrophysics bc I wanted tod edicate msyelf to study stars. My favorte planet is Saturn bc of the the rings. I always though it was  avery pretty planet to draw. And BRUH mf has so many moons what. My second favorite planet is Venus czu it represents beauty and femininity</p>
+                    <img src="Imgs/IMG_3663.png" class="doodle">
+                </div>
+            </div>
+            <hr>
+            <div class="box-middle">
+                <div class="boxConcepts">
+                    <p class="fat">What is the goal of this website???</p>
+                    <i><p style="font-weight: 900;">be a personal blog! yay!!</p></i>
+                    
+                    <p> I will create two sections on this website. The first section would be for uploading pictures from my dialy life. i wll try to update as much as I can. I will addd some thoughs to earch picture. </p>
+                    <img src="Imgs/IMG_4426.jpg" class="doodle">
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="boxConcepts" id="CITATION">
+                        <p class="fat">My social Media!!!</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/3m0c4t7.ipynb?igsh=NnNpeGl5dW9teWdv&utm_source=qr">Instagram - 3m0c4t7.ipynb</a></li>
+                            <li><a href="https://s.team/p/gpvt-njgq/TVRKPWFQ">Steam - gothickitten415</a></li>
+                            <li><a href="https://discord.gg/QgmZSr3m">Discord - gothickitten415</a></li>
+                            <li><a href="https://profile.playstation.com/GothicKitten415">PSN - gothickitten415</a></li>
+                            <li>Xbox Live - 3m0c4t7.ipynb</li>
+                        </ul>
+                        
+                </div>
+                <br>
+                <br>
+                    <div class="boxConcepts">
+                        <p class="fat">I hope you like my website ദ്ദി(｡•̀ ,<)~✩‧₊</p>
+                        <img src="Imgs/IMG_3665.png" class="doodle">
+                    
+                    </div>
+
+            </div>
+        </div>
+
+        <script>
+            function changeColors() {
+                const page = document.getElementById("page");
+                const boxes = document.querySelectorAll(".boxConcepts");
+                const title = document.querySelector(".title h1");
+
+                if (page.style.backgroundColor === "black") {
+                    page.style.backgroundColor = "#fffdf5";
+                    page.style.color = "black";
+                    boxes.forEach(b => {
+                        b.style.backgroundColor = "#fffdf5";
+                        b.style.borderColor = "black";
+                        b.style.boxShadow = "-5px 5px 0 black";
+                    });
+                    title.style.backgroundColor = "#fffdf5";
+                    title.style.color = "black";
+                } else {
+                    page.style.backgroundColor = "black";
+                    page.style.color = "#fffdf5";
+                    boxes.forEach(b => {
+                        b.style.backgroundColor = "black";
+                        b.style.borderColor = "#fffdf5";
+                        b.style.boxShadow = "-5px 5px 0 #fffdf5";
+                    });
+                    title.style.backgroundColor = "black";
+                    title.style.color = "#fffdf5";
+                }
+            }
+        </script>
+    </body>
+</html>
