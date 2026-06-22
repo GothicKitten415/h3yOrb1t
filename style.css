@@ -19,7 +19,7 @@ body{
     margin: 0;
     text-align: justify;
     width:fit-content;
-    background-image: url("IMG_3684.png");
+    background-image: url("Imgs/IMG_3684.png");
     background-repeat: repeat;
     background-size: 60%;
     transition: background-color 0.3s ease, color 0.3s ease;
